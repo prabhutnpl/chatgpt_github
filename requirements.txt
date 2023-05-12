@@ -1,0 +1,5 @@
+Flask
+llama_index
+python-dotenv
+httpx
+transformers
