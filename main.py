@@ -11,9 +11,9 @@ load_dotenv()
 openai_api_key = os.environ["OPENAI_API_KEY"]
 github_token = os.environ["GITHUB_TOKEN"]
 
-owner = "prabhutnpl"
-repo = "chatgpt_github"
-branch = "master"
+owner = "owner"
+repo = "your-github-repo"
+branch = "your-branch"
 
 documents = GithubRepositoryReader(
     github_token=github_token,
@@ -43,9 +43,8 @@ my_index = GPTVectorStoreIndex.from_documents(documents, service_context=service
 
 @app.route('/')
 def index():
-    welcome_message = "Welcome to ChatGPT bot!"
-    question_message = "Ask a question like 'Who is Prabhakaran?'"
-    return render_template('webpage.html', welcome=welcome_message, question=question_message)
+
+    return render_template('webpage.html')
 
 @app.route('/query', methods=['POST'])
 def handle_query():
