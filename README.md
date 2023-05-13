@@ -1,3 +1,5 @@
+# Blog : https://medium.com/@prabhutnpl_14700/how-to-build-a-custom-knowledge-python-chatbot-with-chatgpt-openai-api-flask-and-deploy-it-on-66accae2b8ee
+
 # OPENAI GITHUB SEARCH README
 
 This is a Python Flask web application that creates a natural language processing (NLP) search engine for a GitHub repository. The application takes advantage of the OpenAI API to generate text predictions and the llama_index library to create an index of the repository's content, allowing users to search for specific keywords within the repository.
